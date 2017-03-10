@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+body {
+  height: 100%;
+  display: block;
+  background: #EEEEEE;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+#content {
+  margin: 0 auto;
+  width: 320px;
+  height: 500px;
+  position: relative;
+}
+#content #error_tips {
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  display: none;
+  opacity: .95;
+  width: 100%;
+}
+#content #error_tips #error_tips_content {
+  position: relative;
+  padding: 16px 0 24px 24px;
+  border-radius: 5px;
+  background-color: #525C5F;
+  height: 28px;
+}
+#content #error_tips #error_tips_content #error_icon {
+  position: absolute;
+  top: 18px;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: #808080 ;
+}
+#content #error_tips #error_tips_content #error_message {
+  display: inline-block;
+  line-height: 28px;
+  font-size: 14px;
+  color: #fff;
+  padding: 0 0 0 28px;
+}
+#content #login {
+  margin: 0 auto;
+  padding-top: 30px;
+}
+#content #login #logo {
+  height: 100px;
+  width: 244px;
+  margin: 0 auto 20px;
+  background-size: 244px 100px;
+  background-image: url(../../img/productimg/denglogo.png);
+}
+#content #login #web_login {
+  margin: 0 auto;
+  width: 290px;
+}
+#content #login #web_login #g_list {
+  background: #fff;
+  height: 89px;
+  border-radius: 4px;
+}
+#content #login #web_login #g_list #g_u {
+  border-bottom: 1px solid #eaeaea;
+  position: relative;
+}
+#content #login #web_login #g_list #g_u #del_touch {
+  right: 0;
+  display: block;
+  height: 44px;
+  width: 48px;
+  z-index: 1;
+  position: absolute;
+}
+#content #login #web_login #g_list #g_u #del_touch #del_u {
+  left: 15px;
+  top: 13px;
+  height: 18px;
+  width: 18px;
+  border-radius: 9px;
+  background: url(../../img/productimg/android.png) -117px -2px no-repeat;
+  position: absolute;
+}
+#content #login #web_login #g_list #g_u #u {
+  width: 273px;
+  height: 44px;
+  color: #000;
+  padding-left: 15px;
+  font-size: 16px;
+  border: 0;
+}
+#content #login #web_login #g_list #g_p {
+  position: relative;
+}
+#content #login #web_login #g_list #g_p #del_touch_p {
+  right: 0;
+  display: block;
+  height: 44px;
+  width: 48px;
+  z-index: 1;
+  position: absolute;
+}
+#content #login #web_login #g_list #g_p #del_touch_p #del_p {
+  left: 15px;
+  top: 13px;
+  height: 18px;
+  width: 18px;
+  border-radius: 9px;
+  background: url(../../img/productimg/android.png) -117px -2px no-repeat;
+  position: absolute;
+}
+#content #login #web_login #g_list #g_p #p {
+  width: 273px;
+  height: 44px;
+  color: #000;
+  border: none;
+  background: 0 0;
+  padding-left: 15px;
+  font-size: 16px;
+  -webkit-appearance: none;
+}
+#content #login #web_login #go {
+  width: 290px;
+  height: 44px;
+  line-height: 44px;
+  background: #146fdf;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 15px;
+  display: block;
+  text-align: center;
+}
+#content #login #web_login #onekey {
+  background-color: #e7e7e7;
+  height: 42px;
+  border: 1px solid #9abbe3;
+  color: #146fdf;
+  line-height: 44px;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 16px;
+  border-radius: 4px;
+}
+#content #login #switch {
+  width: 290px;
+  margin: 0 auto;
+}
+#content #login #switch #zc_feedback {
+  width: 290px;
+  position: relative;
+  margin-top: 15px;
+  overflow: hidden;
+}
+#content #login #switch #zc_feedback #zc {
+  float: right;
+  margin-right: -10px;
+  color: #246183;
+  line-height: 14px;
+  font-size: 14px;
+  padding: 15px 10px;
+}
+#content #login #switch #zc_feedback #forgetpwd {
+  float: left;
+  margin-left: -10px;
+  color: #246183;
+  line-height: 14px;
+  font-size: 14px;
+  padding: 15px 10px;
+}

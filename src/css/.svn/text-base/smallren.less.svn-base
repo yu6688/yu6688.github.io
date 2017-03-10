@@ -1,0 +1,21 @@
+@media (min-width: 320px) and (max-width:375px) {
+    .mod_nav_list{position: absolute;z-index: 3;right: 10px;top: -130px; background-color: #fff;border: 1px solid rgba(0,0,0,.2);border-radius: 3px;}
+    .mod_nav_list li{margin: 0 15px;border-bottom: 1px solid #d9d9d9;}
+    .mod_nav_item{display: block;text-align: center;font-size: 14px;line-height: 42px;color: #000;}
+
+    
+    .play_lrc_arrow{visibility: hidden;}
+    .play_lrc_nav{position: absolute;bottom: 10px;display: block;width: 100%;z-index: 100;text-align: center;
+                  a{background-color: #BFBFBF;}
+                  .play_lrc_point--current{background-color: rgb(255,255,255);}
+                  .play_lrc_point{display: inline-block;width: 6px;height: 6px;-webkit-border-radius: 6px;}
+              }
+    .play_progress_bar:after,.play_progress_now:after{content: "";display: block;width: 100%;height: 4px;margin-top: 16px;}
+    .play_progress_now:after{background: #e75c56;}    
+    .mod_title_info{font-size: 12px;}   
+    
+    
+      
+            }
+            
+            

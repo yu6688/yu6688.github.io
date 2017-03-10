@@ -1,0 +1,14 @@
+@media screen and (max-width: 750px) {
+  .title {
+    display: none;
+  }
+  .head {
+    display: none;
+  }
+  .container1 {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
+}

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<title>个人中心-全民K歌</title>
+		<link rel="icon" href="img/kclogo.png" type="image/x-icon" />
+		<link rel="stylesheet" type="text/less" href="src/css/gerenzhongxin.less" />
+		<link rel="stylesheet" type="text/less" media="screen and (min-width: 320px) and (max-width:375px)" href="src/css/smallren.less" />
+		<link rel="stylesheet" type="text/less" media="screen and (min-width:375px) and (max-width:414px)" href="src/css/tinyren.less" />
+		<link rel="stylesheet" type="text/less" media="screen and (min-width:414px)" href="src/css/largeren.less" />
+		<script src="js/less.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!--导航-->
+		<div class="menu">
+			<img src="img/kslogo.png" href="zhuye.html" class="kslogo" />
+			<a href="javascript:void(0);" class="mod_nav_title">打开</a>
+			<a href="javascript:void(0);" class="mod_nav_toggle">
+				<span class="icon_nav"></span>
+			</a>
+			<ul class="mod_nav_list clear_fix" style="display: none;">
+				<!--手机上需要控制点击图标再显示-->
+				<li>
+					<a class="mod_nav_item " href="index.html">
+						<span>首页</span>
+						<em></em>
+					</a>
+				</li>
+				<li>
+					<a class="mod_nav_item mod_nav_item--current " href="product.html">
+						<span>产品介绍</span>
+						<em></em></a>
+				</li>
+				<li>
+					<a class="mod_nav_item " href="dasai.html">
+						<span>大赛</span>
+						<em></em>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--导航-->
+
+		<!--主要内容-->
+		<div class="mod_wrap">
+			<!--个人信息 S-->
+			<div class="my_show">
+				<!--主人态页面-->
+				<div class="my_show_con ">
+					<img class="my_show_photo" src="img/productimg/101.jpg" alt="">
+					<div class="my_show_user">
+						<span class="my_show_name">One Piece</span>
+						<!--认证图标：红色icon_lbvr,黄色icon_lbvy,等级图标icon_lb0到icon_lb21-->
+
+						<span class="icon_level_big icon_lb2"></span>
+
+						<img src="img/productimg/zuanshi.png">
+
+					</div>
+					<div class="my_show_info">
+						进阶歌艺学徒
+						<span class="icon icon_boy"></span> 21 岁 广西玉林
+					</div>
+
+				</div>
+
+			</div>
+			<!--个人信息 E-->
+
+			<!--导航 S-->
+			<div class="my_nav">
+				<ul class="my_nav_list">
+					<li>
+						<a href="javascript:void(0);" data-mod="songs" class="my_nav_item my_nav_item--current" id="ugc">作品 3</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);" data-mod="albums" class="my_nav_item" id="album">专辑 0</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);" data-mod="followers" class="my_nav_item" id="album">粉丝 6</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);" data-mod="following" class="my_nav_item" id="album">关注 5</a>
+					</li>
+				</ul>
+			</div>
+			<!--导航 E-->
+
+			<!--Wrapper S-->
+			<div class="opus_show">
+
+				<!--作品 S-->
+				<div class="mod_playlist" data-mod-content="songs">
+
+					<ul id="songs-list" class="mod_playlist_show playlist_show">
+
+						<li class="mod_playlist_item">
+							<div class="mod_playlist_box">
+								<a href="#" class="mod_playlist_cover">
+									<img class="play_img" src="img/productimg/zhuan1.jpg" alt="">
+									<i class="black_mask"></i>
+									<i class="icon_play_m"></i>
+								</a>
+								<div class="mod_playlist_title">
+									<p>
+										<span class="mod_playlist_work">
+                                                                                                                                       淘汰
+                                        </span>
+										<i class="icon_c"></i>
+									</p>
+									<p>
+										<span class="mod_playlist_record"><span class="icon_talk"></span>0</span>
+										<span class="mod_playlist_record"><span class="icon_ear"></span>6</span>
+									</p>
+								</div>
+							</div>
+						</li>
+						<li class="mod_playlist_item">
+							<div class="mod_playlist_box">
+								<a href="#" class="mod_playlist_cover">
+									<img class="play_img" src="img/productimg/zhuan2.jpg" alt="">
+									<i class="black_mask"></i>
+									<i class="icon_play_m"></i>
+
+								</a>
+								<div class="mod_playlist_title">
+									<p>
+										<span class="mod_playlist_work">
+                                                                                                                                    一次就好
+                                        </span>
+										<i class="icon_s"></i>
+									</p>
+									<p>
+										<span class="mod_playlist_record"><span class="icon_talk"></span>0</span>
+										<span class="mod_playlist_record"><span class="icon_ear"></span>28</span>
+									</p>
+								</div>
+							</div>
+						</li>
+						<li class="mod_playlist_item">
+							<div class="mod_playlist_box">
+								<a href="#" class="mod_playlist_cover">
+									<img class="play_img" src="img/productimg/zhuan1.jpg" alt="">
+									<i class="black_mask"></i>
+									<i class="icon_play_m"></i>
+
+								</a>
+								<div class="mod_playlist_title">
+									<p>
+										<span class="mod_playlist_work">
+                                                                                                                                    不要说话
+                                        </span>
+										<i class="icon_s"></i>
+									</p>
+									<p>
+										<span class="mod_playlist_record"><span class="icon_talk"></span>3</span>
+										<span class="mod_playlist_record"><span class="icon_ear"></span>44</span>
+									</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+
+				</div>
+				<!--作品 E-->
+
+				<!--专辑 S-->
+				<div class="mod_playlist" data-mod-content="albums" style="display:none;">
+
+					<div class="mod_tips_full">
+						<img src="img/productimg/xiaoji.png" alt="提示">
+						<p>TA目前还没有任何专辑哦！</p>
+					</div>
+
+				</div>
+				<!--专辑 E-->
+
+				<!--粉丝 S-->
+				<div data-mod-content="followers"  style="display:none;">
+
+					<ul class="mod_friend" id="followers-list">
+						<li class="mod_friend_grid">
+							<div class="mod_friend_box">
+								<a href="#" class="mod_friend_cover">
+									<img src="img/productimg/10.jpg" alt="" class="avatar_img">
+								</a>
+								<div class="mod_friend_body">
+									<p>
+										<a href="#" title="" class="mod_friend_desc">老秀</a>
+									</p>
+									<p><span class="mod_friend_tit">实力选秀歌手</span></p>
+								</div>
+							</div>
+						</li>
+						<li class="mod_friend_grid">
+							<div class="mod_friend_box">
+								<a href="#" class="mod_friend_cover">
+									<img src="img/productimg/11.jpg" alt="" class="avatar_img">
+								</a>
+								<div class="mod_friend_body">
+									<p>
+										<a href="#" title="" class="mod_friend_desc">what are you弄撒咧<img src="img/productimg/zuicun.png" style="width:24px;height:24px;"></a>
+									</p>
+									<p><span class="mod_friend_tit">进阶选秀歌手</span></p>
+								</div>
+							</div>
+						</li>
+						<li class="mod_friend_grid">
+							<div class="mod_friend_box">
+								<a href="#" class="mod_friend_cover">
+									<img src="img/productimg/12.jpg" alt="" class="avatar_img">
+								</a>
+								<div class="mod_friend_body">
+									<p>
+										<a href="#" title="" class="mod_friend_desc">晓美</a>
+									</p>
+									<p><span class="mod_friend_tit">实力选秀歌手</span></p>
+								</div>
+							</div>
+						</li>
+						<li class="mod_friend_grid">
+							<div class="mod_friend_box">
+								<a href="#" class="mod_friend_cover">
+									<img src="img/productimg/13.jpg" alt="" class="avatar_img">
+								</a>
+								<div class="mod_friend_body">
+									<p>
+										<a href="#" title="" class="mod_friend_desc">淋~眼泪</a>
+									</p>
+									<p><span class="mod_friend_tit">新晋歌艺学徒</span></p>
+								</div>
+							</div>
+						</li>
+						<li class="mod_friend_grid">
+							<div class="mod_friend_box">
+								<a href="#" class="mod_friend_cover">
+									<img src="img/productimg/14.jpg" alt="" class="avatar_img">
+								</a>
+								<div class="mod_friend_body">
+									<p>
+										<a href="#" title="" class="mod_friend_desc">这小伙&amp;不错</a>
+									</p>
+									<p><span class="mod_friend_tit">新晋歌艺学徒</span></p>
+								</div>
+							</div>
+						</li>
+						<li class="mod_friend_grid">
+							<div class="mod_friend_box">
+								<a href="#" class="mod_friend_cover">
+									<img src="img/productimg/15.jpg" alt="" class="avatar_img">
+								</a>
+								<div class="mod_friend_body">
+									<p>
+										<a href="#" title="" class="mod_friend_desc">　cc</a>
+									</p>
+									<p><span class="mod_friend_tit">新晋选秀歌手</span></p>
+								</div>
+							</div>
+						</li>
+					</ul>
+
+				</div>
+				<!--粉丝 E-->
+
+				<!--关注-->
+				<div data-mod-content="following" style="display: none;">
+					<ul class="mod_friend" id="following-list">
+						<li class="mod_friend_grid">
+							<div class="mod_friend_box">
+								<a href="" class="mod_friend_cover">
+									<img src="img/productimg/16.jpg"" class="avatar_img">
+								</a>
+								<div class="mod_friend_body">
+									<p>
+										<a href="#" title="" class="mod_friend_desc">嗯哼</a>
+									</p>
+									<p><span class="mod_friend_tit">新晋选秀歌手</span></p>
+								</div>
+							</div>
+						</li>
+						<li class="mod_friend_grid">
+							<div class="mod_friend_box">
+								<a href="#" class="mod_friend_cover">
+									<img src="img/productimg/17.jpg" alt="" class="avatar_img">
+								</a>
+								<div class="mod_friend_body">
+									<p>
+										<a href="#" title="" class="mod_friend_desc">铃铛阁 <img src="img/productimg/lingdang.png" style="width:24px;height:24px;"> 琳儿</a>
+									</p>
+									<p><span class="mod_friend_tit">实力歌艺学徒</span></p>
+								</div>
+							</div>
+						</li>
+						<li class="mod_friend_grid">
+							<div class="mod_friend_box">
+								<a href="#" class="mod_friend_cover">
+									<img src="img/productimg/18.jpg" alt="" class="avatar_img">
+								</a>
+								<div class="mod_friend_body">
+									<p>
+										<a href="#" title="" class="mod_friend_desc">what are you弄撒咧<img src="img/productimg/zuicun.png" style="width:24px;height:24px;"></a>
+									</p>
+									<p><span class="mod_friend_tit">进阶选秀歌手</span></p>
+								</div>
+							</div>
+						</li>
+						<li class="mod_friend_grid">
+							<div class="mod_friend_box">
+								<a href="http:#" class="mod_friend_cover">
+									<img src="img/productimg/102.jpg" alt="" class="avatar_img">
+								</a>
+								<div class="mod_friend_body">
+									<p>
+										<a href="#" title="" class="mod_friend_desc">此用户下落卟眀</a>
+									</p>
+									<p><span class="mod_friend_tit">新晋选秀歌手</span></p>
+								</div>
+							</div>
+						</li>
+						<li class="mod_friend_grid">
+							<div class="mod_friend_box">
+								<a href="#" class="mod_friend_cover">
+									<img src="img/productimg/103.jpg" alt="" class="avatar_img">
+								</a>
+								<div class="mod_friend_body">
+									<p>
+										<a href="#" title="" class="mod_friend_desc">　cc</a>
+									</p>
+									<p><span class="mod_friend_tit">新晋选秀歌手</span></p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!--关注-->
+			</div>
+			<!--Wrapper E-->
+
+			<div class="mod_up">
+				<a href="javascript:void(0);" class="icon icon_up j_scrolltop"></a>
+			</div>
+		</div>
+		<!--主要内容-->
+
+		<script src="js/gerenrun.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

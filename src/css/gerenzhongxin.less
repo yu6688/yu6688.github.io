@@ -1,0 +1,84 @@
+//整体
+*{margin: 0;padding: 0;}
+@none:none;
+a{text-decoration: @none;cursor: auto;}
+li{list-style: @none;}
+body{height:100%;display: block;background-color: #f5f5f5;}
+h1,h2,h3,h4,h5,h6{font-weight: 400;}
+img {border: 0;vertical-align: middle;}
+//导航
+.menu{position: fixed;left: 0;bottom: 0;z-index: 300;width: 100%;height: 47px;background-color: #fff;opacity: 0.8;
+    .kslogo{position:absolute;top: 10px;left: 10px;width: 110px;height: 30px;}
+    .mod_nav_title{position: absolute;top: 13px;right: 50px;display: block;width: 45px;height: 20px;border: 1px solid #e95f55;border-radius: 16px;color: #e95f55;text-align: center;}
+    .mod_nav_toggle{position: absolute;right: 0;top: 0;padding: 15px 15px 25px 25px;color: -webkit-link;cursor: auto;-webkit-tap-highlight-color: rgba(0,0,0,0);
+        .icon_nav{background-image:url(../../img/productimg/kang.png);display: inline-block;width: 16px;height: 18px;}
+    }
+}
+
+//主要内容
+.mod_wrap{width: 100%;margin: 0 auto;
+    .my_show{position: relative;height: 300px;text-align: center;overflow: hidden; background: url(../../img/productimg/default.jpg) no-repeat center top;
+        .my_show_con{padding-top: 60px;position: relative;z-index: 3;margin: 0 auto;color: #808088;
+            .my_show_photo{display: inline-block;width: 100px;height: 100px;border: 2px solid #fff;border-radius: 100px;}
+            .my_show_user{padding-top: 10px;
+                span{vertical-align: middle;}
+                .my_show_name{display: inline-block;max-width: 70%;width: auto;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;font-size: 18px;color: #fff;text-shadow: 0 2px 2px #000;}
+                .icon_level_big{background-image:url(../../img/productimg/demgji.png);background-size: 560px auto;width: 52px;background-position: -140px 0;display: inline-block;height: 24px;background-repeat: no-repeat;}
+            } 
+            .my_show_info{padding: 10px 0;font-size: 14px;
+                .icon_boy{background-image:url(../../img/productimg/nan.png);width: 15px;height: 15px;display: inline-block;}
+            } 
+        }
+    }
+    .my_nav{margin-bottom: 10px;border-width: 0 0 1px 0;height: 40px;border-top:0;border: 1px solid #dfe3e6;
+        .my_nav_list{width: 100%;margin: 0 auto;zoom: 1;overflow: hidden;
+            li{width: 25%;float: left;
+            .my_nav_item{width: auto;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;font-size: 12px;height: 38px;line-height: 38px;display: block;text-align: center;color: #000;}
+            .my_nav_item--current{padding-bottom: 0;border-bottom: 2px solid #f05549;}
+            .my_nav_item:hover{color: #f05549;}
+            }  
+        }
+    }
+    .opus_show{
+        .mod_playlist{padding-bottom: 50px;overflow: hidden;
+            .mod_playlist_show{margin: 0 5px;overflow: hidden;zoom: 1;
+                .mod_playlist_item{width: 50%;float: left;margin-bottom: 20px;
+                    .mod_playlist_box{margin: 0 5px;background-color: #fff;position: relative;
+                        a{color: #545454;}
+                        .mod_playlist_cover{position: relative;display: block;overflow: hidden;cursor: pointer;padding-top: 100%;zoom: 1;height: 0;color: #545454;
+                            .play_img{position: absolute;left: 0;top: 0;width: 100%;}
+                            .black_mask{position: absolute; left: 0; top: 0; width: 100%; height: 0; padding-top: 100%; background-color: #000;opacity: 0; overflow: hidden; transition: opacity .2s ease-in;}
+                            .icon_play_m{position: absolute; right: 10px; bottom: 10px;display: block; width: 38px; height: 38px; background-image:url(../../img/productimg/bo.png); background-position: -40px 0; overflow: hidden; text-indent: -999px; -webkit-transition: background-image .2s ease-in;}   
+                        }
+                        .mod_playlist_title{padding: 5px;height: 48px;
+                            p{overflow: hidden;zoom: 1;}
+                            .mod_playlist_work{max-width: 70%;float: left; font-size: 14px; margin-right: 5px; line-height: 24px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+                            .icon_c{display: inline-block; width: 10px; height: 10px; background-image:url(../../img/productimg/c.png); background-position: -63px -61px; vertical-align: top; position: relative; top: 7px;}    
+                            .mod_playlist_record{color: #999;font-size:12px ;float: left;}
+                            .mod_playlist_record:first-child{margin-right: 5px;}
+                            .icon_talk{display: inline-block; width: 16px; height: 16px; background-image:url(../../img/productimg/xiao.png);overflow: hidden; line-height: 9em; margin-right: 3px; vertical-align: middle;}
+                            .icon_ear{display: inline-block; width: 16px; height: 16px; background-image: url(../../img/productimg/ji.png); overflow: hidden; line-height: 9em; margin-right: 3px; vertical-align: middle;background-size: cover;}
+                            .icon_s{display: inline-block; width: 10px; height: 10px; background-image:url(../../img/productimg/s.png); vertical-align: top; position: relative; top: 7px;}
+                        }
+                    }
+                }
+            }
+            .mod_tips_full{padding: 30px 0;font-size: 16px;text-align: center;color: grey;
+                img{display: inline-block;margin-bottom: 20px;}
+            }
+        }
+        .mod_friend{margin: 0 10px;padding-bottom: 50px;overflow: hidden;zoom: 1;
+            .mod_friend_grid{width: 100%;float: left;
+                .mod_friend_box{zoom: 1;padding: 10px 0 13px;overflow: hidden;
+                    a{color: #545454;}
+                    .mod_friend_cover{position: relative;float: left;margin-right: 12px;width: 50px;height: 50px;
+                        .avatar_img{display: block; width: 100%; height: 100%; border-radius: 100%;}
+                    }
+                    .mod_friend_body{font-size: 14px;height: 50px;line-height: 25px;
+                        
+                    }
+                }
+            }
+        }
+    }
+}

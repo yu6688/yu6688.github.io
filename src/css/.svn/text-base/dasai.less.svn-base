@@ -1,0 +1,93 @@
+//整体
+*{margin: 0;padding: 0;}
+@none:none;
+a{text-decoration: @none;}
+li{list-style: @none;}
+#container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+//头部
+.head{height:30px;background: #333333;overflow: hidden;width: 100%;
+    li{float: right;margin-right: 20px;}
+    li:first-child{margin-right: 80px;}
+    a{color: #b5b5b5;font-size: 12px;line-height: 30px;}
+    a:hover{color: white;}
+}
+
+//导航
+.menu{max-height: 140px;overflow: hidden;
+    .klogo{float: left;margin-top: 18px;margin-left: 74px;}
+    
+    li{float: left;line-height: 100px;height: 80px;width: 76px;text-align: center;margin-bottom: 20px;}
+    .active{background: #F05549;
+        a{color: white;}
+    }
+    a{color: #898989;font-size: 18px;}
+    a:hover{color:#F05549;}
+}
+.menu2{position: fixed;left: 0;top: 0;z-index: 300;width: 100%;height: 47px;background-color: #fff;
+    .kslogo{position:absolute;top: 10px;left: 10px;width: 110px;height: 30px;}
+    .mod_nav_title{position: absolute;top: 13px;right: 50px;display: block;width: 45px;height: 20px;border: 1px solid #e95f55;border-radius: 18px;color: #e95f55;text-align: center;}
+    .mod_nav_toggle{position: absolute;right: 0;top: 0;padding: 15px 15px 25px 25px;color: -webkit-link;cursor: auto;-webkit-tap-highlight-color: rgba(0,0,0,0);
+        .icon_nav{background-image:url(../../img/productimg/kang.png);display: inline-block;width: 18px;height: 18px;}
+    }
+}
+.feature_photo{position: relative;width: 60%;height: auto;background-size: 100% auto;}
+    .mod_nav_list{position: absolute;z-index: 3;right: 10px;top: 40px; background-color: #fff;border: 1px solid rgba(0,0,0,.2);border-radius: 3px;zoom: 1;}
+    .mod_nav_list li{margin: 0 15px;border-bottom: 1px solid #d9d9d9;}
+    .mod_nav_list li:last-child{border-bottom: 0px;}
+    .mod_nav_item{display: block;text-align: center;font-size: 14px;line-height: 42px;color: #000;}
+//主要内容
+.container1 {
+        width: 1204px;
+        height: 1400px;
+        margin: 0 auto;       
+ .act_show {
+        min-width: 340px;
+        min-height: 230px;
+         overflow: hidden;
+         }
+.act_show li{float: left;margin-left: 45px;margin-top: 20px;}        
+.act_show img{width: 340px;height: 180px;}
+.showp{display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+     overflow: hidden;
+    word-break: keep-all;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    color: #000;}
+.act_show p{
+   font-size: 16px;
+   .showp;
+   }
+   }
+.container2{
+   width: 100%; margin-top: 50px;
+   .act_show li{margin-top: 20px;} 
+   .act_show img{margin:0 auto ;margin-left: 20px;width: 90%;}
+   p{margin-left: 18px;font-weight: 550;
+     color: #000;font-size: 18px;}
+}
+#back{width: 40px;height: 40px;position: fixed;bottom: 20px;right: 5%;display: none;
+    img{width: 40px;height: 40px;
+    }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+

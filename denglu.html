@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<title>统一登录</title>
+		<link rel="icon" href="img/kclogo.png" type="image/x-icon" />
+		<link rel="stylesheet" type="text/less" href="src/css/denglu.less" />
+		<link rel="stylesheet" type="text/less" media="screen and (min-width: 320px) and (max-width:375px)" href="src/css/smallren.less" />
+		<link rel="stylesheet" type="text/less" media="screen and (min-width:375px) and (max-width:414px)" href="src/css/tinyren.less" />
+		<link rel="stylesheet" type="text/less" media="screen and (min-width:414px)" href="src/css/largeren.less" />
+		<script src="js/less.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div id="content" class="content">
+			<div id="error_tips">
+				<div id="error_tips_content"><span id="error_icon"></span> <span id="error_message">您还没有输入密码！</span></div>
+			</div>
+			<div id="login" class="login">
+				<div id="logo" class="logo"></div>
+				<div id="web_login">
+					<ul id="g_list">
+						<li id="g_u">
+							<div id="del_touch" class="del_touch"><span id="del_u" class="del_u"></span></div><input id="u" class="inputstyle" name="u" type="text" autocomplete="off" placeholder="QQ号码/手机/邮箱"></li>
+						<li id="g_p">
+							<div id="del_touch_p" class="del_touch"><span id="del_p" class="del_u"></span></div><input id="p" class="inputstyle" maxlength="16" type="password" name="p" autocorrect="off" placeholder="请输入您的QQ密码"></li>
+					</ul>
+					<div href="javascript:void(0);" id="go"> 登 录 </div>
+					<div href="javascript:void(0);" id="onekey" class=" weak" style="display: block;"> 一键登录 </div>
+				</div>
+				<div id="switch">
+					<div id="zc_feedback"> <a href="zhu.html"><span id="zc">注册新帐号</span></a> <span id="forgetpwd">忘了密码？</span> </div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/dengrun.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

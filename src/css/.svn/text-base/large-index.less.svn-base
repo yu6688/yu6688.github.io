@@ -1,0 +1,7 @@
+@media (min-width: 414px){
+    .wrap{height: 2200px;}
+    .item{min-height: 690px;}
+    .item-1{transform: translate3d(0px,0px,0px);}
+    .item-2{transform: translate3d(0px,568px,0px);}
+    .item-3{transform: translate3d(0px,1250px,0px);}
+            }

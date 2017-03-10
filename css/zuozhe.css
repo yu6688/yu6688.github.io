@@ -1,0 +1,533 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  cursor: auto;
+}
+li {
+  list-style: none;
+}
+body {
+  height: 100%;
+  display: block;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+img {
+  border: 0;
+  vertical-align: middle;
+}
+.menu {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 300;
+  width: 100%;
+  height: 47px;
+  background-color: #fff;
+  opacity: 0.8;
+}
+.menu .kslogo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 110px;
+  height: 30px;
+}
+.menu .mod_nav_title {
+  position: absolute;
+  top: 13px;
+  right: 50px;
+  display: block;
+  width: 45px;
+  height: 20px;
+  border: 1px solid #e95f55;
+  border-radius: 18px;
+  color: #e95f55;
+  text-align: center;
+}
+.menu .mod_nav_toggle {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 15px 15px 25px 25px;
+  color: -webkit-link;
+  cursor: auto;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.menu .mod_nav_toggle .icon_nav {
+  background-image: url(../../img/productimg/kang.png);
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+}
+.mod_wrap {
+  width: 100%;
+  margin: 0 auto;
+}
+.mod_wrap .clear_fix {
+  zoom: 1;
+}
+.mod_wrap .clear_fix:before {
+  content: "";
+  display: block;
+}
+.mod_wrap .clear_fix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.mod_wrap .mod_content {
+  float: none;
+  width: auto;
+}
+.mod_wrap .mod_content .play_show {
+  position: relative;
+}
+.mod_wrap .mod_content .play_show .play_info {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  height: 0;
+  overflow: hidden;
+}
+.mod_wrap .mod_content .play_show .play_info .play_barrage {
+  position: absolute;
+  z-index: 10;
+  top: 8%;
+  width: 200%;
+  height: 75%;
+  left: 768px;
+}
+.mod_wrap .mod_content .play_show .play_info .play_barrage .play_barrage__para {
+  border: solid 1px rgba(255, 255, 255, 0.6);
+  position: absolute;
+  padding: 0 10px;
+  height: 28px;
+  line-height: 28px;
+  font-size: 14px;
+  color: lightblue;
+  border-radius: 27px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.mod_wrap .mod_content .play_show .play_info .play_barrage .animation_bar {
+  -webkit-animation: 10s roll linear infinite alternate;
+}
+@keyframes roll {
+  20% {
+    margin-right: 200px;
+  }
+  40% {
+    margin-right: 400px;
+  }
+  60% {
+    margin-right: 600px;
+  }
+  80% {
+    margin-right: 700px;
+  }
+  100% {
+    margin-left: 800px;
+  }
+}
+.mod_wrap .mod_content .play_show .play_info .play_lrc_one {
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 132px;
+  background-image: url(../../img/productimg/pingmu.png);
+  background-repeat: repeat-x;
+  text-align: center;
+}
+.mod_wrap .mod_content .play_show .play_info .play_lrc_one pre {
+  font-size: 16px;
+  color: white;
+  line-height: 2.2;
+  z-index: 4;
+  text-align: center;
+  font-weight: 400;
+  position: relative;
+  height: 600px;
+  top: -460px;
+}
+.mod_wrap .mod_content .play_show .play_photo {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.mod_wrap .mod_content .play_show .play_photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.mod_wrap .mod_content .play_control {
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  border: 0;
+}
+.mod_wrap .mod_content .play_control .btn_control {
+  left: 10px;
+  bottom: 20px;
+  position: absolute;
+  float: none;
+  margin: 0;
+  display: inline-block;
+}
+.mod_wrap .mod_content .play_control .btn_control .icon_play_red {
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  background-image: url(../../img/productimg/bofang.png);
+  background-position: -46px 0;
+  background-size: 45px;
+  width: 45px;
+  height: 45px;
+}
+.mod_wrap .mod_content .play_control .btn_control .icon_stop_red {
+  display: none;
+  font-size: 0;
+  line-height: 0;
+  background-image: url(../../img/productimg/zanting.png);
+  background-position: -46px 0;
+  background-size: 45px;
+  width: 45px;
+  height: 45px;
+}
+.mod_wrap .mod_content .play_control .play_progress_bar {
+  height: 4px;
+  background-color: lightcyan;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #000000 #000;
+}
+.mod_wrap .mod_content .play_control .play_progress_bar .play_progress_load {
+  width: 0px;
+  height: 4px;
+  background-color: transparent;
+  background-image: -webkit-linear-gradient(left, #5bd8ff, #ff0000);
+  background-image: -moz-linear-gradient(left, #5bd8ff, #ff0000);
+  background-image: -o-linear-gradient(left, #5bd8ff, #ff0000);
+  background-image: -ms-linear-gradient(left, #5bd8ff, #ff0000);
+  background-image: linear-gradient(left, #5bd8ff, #ff0000);
+  box-shadow: inset 0 -2px 2px rgba(0, 0, 0, 0.4);
+  position: absolute;
+}
+.mod_wrap .mod_content .play_control .play_control_time {
+  right: 13px;
+  bottom: 13px;
+  color: #fff;
+  position: absolute;
+}
+.mod_wrap .mod_content .play_control .btn_barrage {
+  right: 0;
+  bottom: 20px;
+  padding: 10px 12px;
+  width: auto;
+  height: auto;
+  position: absolute;
+  display: block;
+}
+.mod_wrap .mod_content .play_control .btn_barrage .icon_barrage_on {
+  display: block;
+  background-image: url(../../img/productimg/tanmu.png);
+  width: 36px;
+  height: 36px;
+}
+.mod_wrap .mod_content .play_control .btn_barrage .icon_barrage_up {
+  display: none;
+  background-image: url(../../img/productimg/guan.png);
+  width: 36px;
+  height: 36px;
+}
+.mod_sidebar {
+  background-color: #fff;
+  float: none;
+  width: auto;
+}
+.mod_sidebar .singer_show {
+  margin: 0 10px;
+}
+.mod_sidebar .singer_show .singer_con {
+  padding-top: 10px;
+  overflow: hidden;
+  zoom: 1;
+}
+.mod_sidebar .singer_show .singer_con .singer_person {
+  padding-left: 60px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  zoom: 1;
+  box-sizing: border-box;
+  position: relative;
+}
+.mod_sidebar .singer_show .singer_con .singer_person .singer_img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  float: left;
+}
+.mod_sidebar .singer_show .singer_con .singer_person .singer_img img {
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+.mod_sidebar .singer_show .singer_con .singer_person .singer_img .icon_level {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -22px;
+  width: 45px;
+  background-position: -350px -17px;
+  display: inline-block;
+  vertical-align: text-top;
+  height: 17px;
+  background-image: url(../../img/productimg/demgji.png);
+  background-size: 400 auto;
+}
+.mod_sidebar .singer_show .singer_con .singer_person .singer_user {
+  margin-top: 3px;
+  zoom: 1;
+  float: left;
+}
+.mod_sidebar .singer_show .singer_con .singer_person .singer_user .singer_user_name {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  color: #000;
+  outline: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.mod_sidebar .singer_show .singer_con .singer_person .singer_user .singer_user_name img {
+  vertical-align: middle;
+}
+.mod_sidebar .singer_show .singer_con .singer_person .singer_user .singer_user_info {
+  margin-left: -5px;
+  font-size: 14px;
+  color: grey;
+}
+.mod_sidebar .singer_show .singer_con .singer_person .singer_user .singer_user_info .icon {
+  vertical-align: text-top;
+  margin: 3px 3px 0 5px;
+}
+.mod_sidebar .singer_show .singer_con .singer_person .singer_user .singer_user_info .icon_ear {
+  background-image: url(../../img/productimg/ji.png);
+  width: 14px;
+  height: 12px;
+  display: inline-block;
+}
+.mod_sidebar .singer_show .singer_con .singer_person .singer_user .singer_user_info .icon_talk {
+  background-image: url(../../img/productimg/xiao.png);
+  width: 14px;
+  height: 12px;
+  display: inline-block;
+}
+.mod_sidebar .singer_show .singer_con .singer_person .singer_user .singer_user_info .icon_cup {
+  background-image: url(../../img/productimg/bei.png);
+  color: grey;
+  width: 14px;
+  height: 12px;
+  display: inline-block;
+}
+.mod_sidebar .singer_show .singer_con .singer_person .singer_user .singer_user_info strong {
+  color: #f90;
+  padding-left: 5px;
+}
+.mod_sidebar .singer_show .singer_say {
+  padding-top: 10px;
+  border-top: 1px solid #efefef;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.mod_sidebar .singer_show .singer_say img {
+  vertical-align: middle;
+}
+.mod_sidebar .singer_show .singer_time {
+  color: grey;
+}
+.mod_sidebar .play_gift {
+  position: relative;
+  padding: 25px 0 30px;
+  margin-top: 15px;
+}
+.mod_sidebar .play_gift:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 10px;
+  background-color: #f6f6f6;
+  border-top: 1px solid #efefef;
+  border-bottom: 1px solid #efefef;
+}
+.mod_sidebar .play_gift:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 10px;
+  background-color: #f6f6f6;
+  border-top: 1px solid #efefef;
+  border-bottom: 1px solid #efefef;
+}
+.mod_sidebar .play_gift .play_gift_title {
+  font-size: 16px;
+  padding: 0 10px 5px;
+}
+.mod_sidebar .play_gift .play_gift_rank {
+  height: 73px;
+  position: relative;
+  color: grey;
+  overflow: hidden;
+}
+.mod_sidebar .play_gift .play_gift_rank .play_rank_list .play_rank_item {
+  float: left;
+  width: auto;
+  margin: 0 7px 0 10px;
+  padding: 10px 0;
+  text-align: center;
+}
+.mod_sidebar .play_gift .play_gift_rank .play_rank_list .play_rank_item .play_rank_img {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  margin: 0 auto;
+  display: block;
+}
+.mod_sidebar .play_gift .play_gift_rank .play_rank_list .play_rank_item .play_rank_img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+.mod_sidebar .play_gift .play_gift_rank .play_rank_list .play_rank_item .play_rank_img .play_rank_count {
+  text-align: center;
+  padding-top: 5px;
+}
+.mod_sidebar .play_gift .play_gift_rank .play_rank_list .play_rank_item .play_rank_img .icon_crown1 {
+  left: 9px;
+  position: absolute;
+  top: -10px;
+  background-image: url(../../img/productimg/jin.png);
+  width: 25px;
+  height: 15px;
+}
+.mod_sidebar .play_gift .play_gift_rank .play_rank_list .play_rank_item .play_rank_img .icon_crown2 {
+  left: 9px;
+  position: absolute;
+  top: -10px;
+  background-image: url(../../img/productimg/yin.png);
+  width: 25px;
+  height: 15px;
+}
+.mod_sidebar .play_gift .play_gift_rank .play_rank_list .play_rank_item .play_rank_img .icon_crown3 {
+  left: 9px;
+  position: absolute;
+  top: -10px;
+  background-image: url(../../img/productimg/tong.png);
+  width: 25px;
+  height: 15px;
+}
+.mod_sidebar .play_gift .play_gift_rank .play_gift_more {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 22px 12px;
+}
+.mod_sidebar .play_gift .play_gift_rank .play_gift_more .icon_gray_right {
+  background-image: url(../../img/productimg/xiangyou.png);
+  width: 8px;
+  height: 12px;
+  display: inline-block;
+}
+.mod_sidebar .mod_comment {
+  padding-bottom: 50px;
+}
+.mod_sidebar .mod_comment .mod_title {
+  margin: 10px 0 10px 10px;
+  display: block;
+}
+.mod_sidebar .mod_comment .mod_title .mod_title_name {
+  font-size: 16px;
+  line-height: 1.5;
+  float: left;
+  color: #000;
+}
+.mod_sidebar .mod_comment .mod_title .mod_title_name .mod_title_info {
+  color: grey;
+  padding-left: 5px;
+}
+.mod_sidebar .mod_comment .mod_comment_show {
+  height: auto;
+  position: relative;
+}
+.mod_sidebar .mod_comment .mod_comment_show .mod_comment_list {
+  margin: 0 10px;
+}
+.mod_sidebar .mod_comment .mod_comment_show .mod_comment_list .mod_comment_item {
+  border-bottom: 1px solid #efefef;
+  overflow: hidden;
+  padding: 10px 0;
+}
+.mod_sidebar .mod_comment .mod_comment_show .mod_comment_list .mod_comment_item .mod_comment_img {
+  width: 40px;
+  height: 40px;
+  float: left;
+}
+.mod_sidebar .mod_comment .mod_comment_show .mod_comment_list .mod_comment_item .mod_comment_img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+.mod_sidebar .mod_comment .mod_comment_show .mod_comment_list .mod_comment_item .mod_comment_con {
+  margin-left: 50px;
+  margin: 0 10px 0 60px;
+  overflow: hidden;
+  zoom: 1;
+}
+.mod_sidebar .mod_comment .mod_comment_show .mod_comment_list .mod_comment_item .mod_comment_con .mod_comment_name {
+  float: left;
+  width: 72%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 16px;
+  color: red;
+}
+.mod_sidebar .mod_comment .mod_comment_show .mod_comment_list .mod_comment_item .mod_comment_con .mod_comment_time {
+  float: right;
+  color: grey;
+  line-height: 21px;
+  font-size: 14px;
+}
+.mod_sidebar .mod_comment .mod_comment_show .mod_comment_list .mod_comment_item .mod_comment_con .mod_comment_info {
+  font-size: 14px;
+  color: #000;
+  clear: both;
+}
